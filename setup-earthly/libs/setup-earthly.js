@@ -16,7 +16,7 @@ try {
     install_cmd = "brew install earthly"
   }
 
-  child_process.exec(, (error, stdout, stderr) => {
+  child_process.exec(install_cmd, (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
