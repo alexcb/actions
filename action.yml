@@ -1,0 +1,6 @@
+name: Setup earthly
+description: Installs the Earthly binary
+author: Alex Couture-Beil
+runs:
+  using: node12
+  main: lib/setup-earthly.js
