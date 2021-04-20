@@ -3,9 +3,9 @@ const github = require('@actions/github');
 const exec = require('child_process');
 
 try {
-    console.log(`Setting up earthly`);
+  console.log(`Setting up earthly`);
 
-  exec("ls -la", (error, stdout, stderr) => {
+  exec("touch /hello", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
