@@ -1,11 +1,11 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
-const exec = require('child_process');
+const child_process = require('child_process');
 
 try {
   console.log(`Setting up earthly`);
 
-  exec("touch /hello", (error, stdout, stderr) => {
+  child_process.exec("touch /hello", (error, stdout, stderr) => {
     if (error) {
         console.log(`error: ${error.message}`);
         return;
